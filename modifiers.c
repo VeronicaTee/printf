@@ -10,7 +10,9 @@ unsigned int print_neg_width(buffer_t *output, unsigned int printed,
 /**
  * print_width - Stores leading spaces to a buffer for a width modifier.
  * @output: A buffer_t struct containing a character array.
- *
+ * @printed: Printed.
+ * @flags: Flag modifiers.
+ * @wid: A width modifier.
  * Return: The number of bytes stored to the buffer.
  */
 unsigned int print_width(buffer_t *output, unsigned int printed,
