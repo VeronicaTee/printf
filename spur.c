@@ -6,21 +6,6 @@
 #include <string.h>
 
 /**
- * error_format - returns error
- * @format: format
- * none
- */
-
-void error_format(const char *format)
-{
-	if (!format || !*format)
-	{
-		write(1, "error", 6);
-		exit(98);
-	}
-}
-
-/**
  * _printf - trying to make printf2
  * @format: format of string
  * Return: number of chars printed
