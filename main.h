@@ -38,7 +38,7 @@ typedef struct buffer_s
 /**
  * struct converter_s - A new type defining a converter struct.
  * @specifier: A character representing a conversion specifier.
- * @func: A pointer to a conversion function corresponding to specifier.
+ * @func:A pointer to a conversion function corresponding to specifier.
  */
 typedef struct converter_s
 {
