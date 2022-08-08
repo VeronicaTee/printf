@@ -5,8 +5,9 @@ int run_printf(const char *format, va_list args, buffer_t *output);
 int _printf(const char *format, ...);
 
 /**
- * cleanup operations for _printf.
- * @output: A buffer struct.
+ * cleanup - Peforms cleanup operations for _printf.
+ * @args: A va_list of arguments provided to _printf.
+ * @output: A buffer_t struct.
  */
 void cleanup(va_list args, buffer_t *output)
 {
@@ -16,9 +17,12 @@ void cleanup(va_list args, buffer_t *output)
 }
 
 /**
- * Read through the format string for _printf.
+ * run_printf - Reads through the format string for _printf.
+ * @format: Character string to print - may contain directives.
+ * @output: A buffer_t struct containing a buffer.
+ * @args: A va_list of arguments.
  *
- * Return number of characters stored to output.
+ * Return: The number of characters stored to output.
  */
 int run_printf(const char *format, va_list args, buffer_t *output)
 {
@@ -61,9 +65,10 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 }
 
 /**
- * Output a formatted string.
+ * _printf - Outputs a formatted string.
+ * @format: Character string to print - may contain directives.
  *
- * Return number of characters printed.
+ * Return: The number of characters printed.
  */
 int _printf(const char *format, ...)
 {
