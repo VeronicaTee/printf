@@ -1,6 +1,6 @@
 #include "main.h"
 
-void cleanup(va_list args, buffer_t *output);
+// void cleanup(va_list args, buffer_t *output);
 int run_printf(const char *format, va_list args, buffer_t *output);
 int _printf(const char *format, ...);
 
@@ -8,12 +8,12 @@ int _printf(const char *format, ...);
  * cleanup operations for _printf.
  * @output: A buffer struct.
  */
-void cleanup(va_list args, buffer_t *output)
-{
-	va_end(args);
-	write(1, output->start, output->len);
-	free_buffer(output);
-}
+// void cleanup(va_list args, buffer_t *output)
+// {
+// 	va_end(args);
+// 	write(1, output->start, output->len);
+// 	free_buffer(output);
+// }
 
 /**
  * Read through the format string for _printf.
